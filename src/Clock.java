@@ -3,8 +3,6 @@ import java.time.LocalDateTime;
 public class Clock {
     public static void main(String[] args) {
 
-        int second = 99;
-
         while (true) {
             LocalDateTime now = LocalDateTime.now();
             int hour = now.getHour();
