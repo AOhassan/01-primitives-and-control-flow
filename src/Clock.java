@@ -7,14 +7,12 @@ public class Clock {
             LocalDateTime now = LocalDateTime.now();
             int hour = now.getHour();
             int minute = now.getMinute();
-            int lastsecond = second;
-            second = now.getSecond();
+            int second = now.getSecond();
 
-            if (lastsecond != second) {
+            if (second != second) {
                 String format = "%d:%d %d";
                 String output = String.format(format, hour, minute, second);
                 System.out.println(output);
-
             }
         }
     }
