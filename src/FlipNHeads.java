@@ -4,26 +4,26 @@ public class FlipNHeads {
         int flips = 0;
         int heads = 0;
 
+
+        if (heads <= 1) {
+            System.out.println("It took " + flips + " flips to flip " + n + " head in a row");
+        } else {
+            System.out.println("It took " + flips + " flips to flip " + n + " heads in a row");
+        }
         do {
             if (Math.random() >= .5) {
                 System.out.println("tails");
                 heads++;
-            }
-            else {
+            } else {
                 System.out.println("heads");
                 heads = 0;
             }
             flips++;
-        }
-
-        while (heads != n) {
-
+        } while (heads != n);
             if (heads <= 1) {
                 System.out.println("It took " + flips + " flips to flip " + n + " head in a row");
-            }
-            else {
+            } else {
                 System.out.println("It took " + flips + " flips to flip " + n + " heads in a row");
             }
         }
     }
-}
