@@ -1,9 +1,12 @@
 public class FlipNHeads {
+    public static void main(String[] args) {
+        flipNHeads(60);
+    }
+
     public static void flipNHeads(int n) {
 
         int flips = 0;
         int heads = 0;
-
 
         if (heads <= 1) {
             System.out.println("It took " + flips + " flips to flip " + n + " head in a row");
